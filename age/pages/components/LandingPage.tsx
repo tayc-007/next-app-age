@@ -22,7 +22,7 @@ export default function LandingPage(){
       Green Energy Platform</Heading>
     <Button bg={'#3BB900'} borderRadius={"14px"} w={['160px','180px','200px']} h={['40px','40px',"50px"]}
       maxH={'auto'}>
-      <Link href=''>
+      <Link href='mailto:tayseer266@msn.com'>
       <Text fontWeight={300} fontSize={['16px','20px','24px']} fontStyle={'italic'} color={'white'}>Get In
         Touch</Text>
       </Link></Button>
