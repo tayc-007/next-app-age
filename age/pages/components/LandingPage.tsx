@@ -17,7 +17,7 @@ export default function LandingPage(){
 
 
 
-  <Container position="absolute"  centerContent textAlign={'center'} maxW="auto">
+  <Container  centerContent textAlign={'center'} maxW="auto">
     <Image alt="" src={"/age-logo-t 1.png"} height={"140"} width={"140"} />
     <Heading color={'#3CA50A'} fontSize={['34px','38px','48px']} fontWeight={700}>Advocacy For Green Energy
     </Heading>
