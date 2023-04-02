@@ -1,7 +1,7 @@
 
 import '@fontsource/montserrat'
 import styles from '@/styles/Home.module.css'
-import { Grid, GridItem,Text,Heading,Button, Container } from '@chakra-ui/react'
+import { Grid, GridItem,Text,Heading,Button, Container, Center, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function LandingPage(){
@@ -10,9 +10,12 @@ export default function LandingPage(){
 <Grid templateAreas={`"main main" `} gridTemplateRows={'1fr'} gridTemplateColumns={'1fr'} gap='1'>
 
 
+
 <GridItem area={'main'}>
 
-  <Container position="absolute" pt='15%' centerContent textAlign={'center'} maxW="auto">
+<Center width={"100vw"} height={"100vh"}>
+        <Flex>
+        <Container position="absolute"  centerContent textAlign={'center'} maxW="auto">
     <Image alt="" src={"/age-logo-t 1.png"} height={"140"} width={"140"} />
     <Heading color={'#3CA50A'} fontSize={['34px','38px','48px']} fontWeight={700}>Advocacy For Green Energy
     </Heading>
@@ -27,6 +30,10 @@ export default function LandingPage(){
         Touch</Text>
       </Link></Button>
   </Container>
+        </Flex>
+      </Center>
+
+ 
 </GridItem>
 
 </Grid>
