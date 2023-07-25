@@ -1,15 +1,23 @@
 
 import '@fontsource/montserrat'
 import styles from '@/styles/Home.module.css'
-import { Grid, GridItem,Text,Heading,Button, Container, Center, Flex } from '@chakra-ui/react'
+import { Grid, GridItem,Text,Heading,Button, Container, Center, Flex,SimpleGrid } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function LandingPage(){
   return(
 <>
-<Center width={"100vw"} height={"100vh"}>
+<Container maxW="auto" className={styles.container} centerContent>
+  <SimpleGrid columns={2}>
+  <Link href={"/"}>Home</Link>
+  <Link href={"/OurWork"}>Our Work</Link>
+  </SimpleGrid>
+  
+</Container>
+
+<Center height={"100vh"}>
         <Flex>
-        <Grid templateAreas={`"main main" `} gridTemplateRows={'1fr'} gridTemplateColumns={'1fr'} gap='1'>
+        <Grid templateAreas={`"main"`} gridTemplateRows={'1fr'} gridTemplateColumns={'1fr'} gap='1'>
 
 
 
