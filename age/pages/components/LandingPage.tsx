@@ -1,31 +1,31 @@
 
 import '@fontsource/montserrat'
 import styles from '@/styles/Home.module.css'
-import { Grid, GridItem,Text,Heading,Button, Container, Center, Flex,SimpleGrid } from '@chakra-ui/react'
+import { Box,Grid, GridItem,Text,Heading,Button, Container, Center, Flex,SimpleGrid, Spacer } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import FullscreenDropdownMenu from './FullscreenDropdownMenu'
 export default function LandingPage(){
   return(
 <>
-<Container maxW="auto" className={styles.container} centerContent>
-  <SimpleGrid columns={2}>
-  <Link href={"/"}>Home</Link>
-  <Link href={"/OurWork"}>Our Work</Link>
-  </SimpleGrid>
-  
-</Container>
 
-<Center height={"100vh"}>
+<Flex align="center" p={4}>
+      <Spacer />
+      <FullscreenDropdownMenu />
+    </Flex>
+  
+
+<Center height={"100vh"} className={styles.bgImage} bgImage={"https://wallpapers.com/images/featured/renewable-energy-f7ct6d63jjmy2z96.jpg"}>
         <Flex>
         <Grid templateAreas={`"main"`} gridTemplateRows={'1fr'} gridTemplateColumns={'1fr'} gap='1'>
 
 
 
-<GridItem area={'main'}>
+<GridItem area={'main'} >
 
 
 
-  <Container  centerContent textAlign={'center'} maxW="auto">
+  <Container  centerContent textAlign={'center'} maxW="auto" >
     <Image alt="" src={"/age-logo-t 1.png"} height={"140"} width={"140"} />
     <Heading color={'#3CA50A'} fontSize={['34px','38px','48px']} fontWeight={700}>Advocacy For Green Energy
     </Heading>
@@ -39,11 +39,13 @@ export default function LandingPage(){
       <Text fontWeight={300} fontSize={['16px','20px','24px']} fontStyle={'italic'} color={'white'}>Get In
         Touch</Text>
       </Link></Button>
+      
   </Container>
 </GridItem>
 
 </Grid>
         </Flex>
+   
       </Center>
 
 

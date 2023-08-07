@@ -1,3 +1,8 @@
 .container{
-    color: #3CA50A;
+    color: white;
+    background-color: #3CA50A;
+}
+.bgImage{
+   background-color: rgba(0, 0, 0, 0.753);
+   background-blend-mode: multiply;
 }
