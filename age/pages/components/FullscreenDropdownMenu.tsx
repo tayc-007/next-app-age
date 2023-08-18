@@ -85,6 +85,13 @@ const FullscreenDropdownMenu = () => {
               </MenuButton>
               <MenuList bg="white">
                 <NextLink href="/Vision" passHref>
+                <MenuItem
+                    fontSize={{ base: '16px', md: '18px', lg: '20px' }}
+                    fontWeight="bold"
+                    color="black"
+                  >
+                    Green Energys - Save Our Planet
+                  </MenuItem>
                   <MenuItem
                     fontSize={{ base: '16px', md: '18px', lg: '20px' }}
                     fontWeight="bold"
@@ -97,13 +104,7 @@ const FullscreenDropdownMenu = () => {
                   target="_blank"
                   href="https://docs.google.com/presentation/d/1r-VpV2iXhS4BdkBDV0jf3O1GkKByaJB0/edit?usp=sharing&ouid=112031141031112140273&rtpof=true&sd=true"
                 >
-                  <MenuItem
-                    fontSize={{ base: '16px', md: '18px', lg: '20px' }}
-                    fontWeight="bold"
-                    color="black"
-                  >
-                    Green Energys - Save Our Planet
-                  </MenuItem>
+                  
                 </Link>
               </MenuList>
             </Menu>
