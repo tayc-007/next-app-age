@@ -86,7 +86,7 @@ const FullscreenDropdownMenu = () => {
               <MenuList bg="white">
                 <NextLink href="/Vision" passHref>
                   <MenuItem
-                    fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                    fontSize={{ base: '16px', md: '18px', lg: '20px' }}
                     fontWeight="bold"
                     color="black"
                   >
@@ -98,7 +98,7 @@ const FullscreenDropdownMenu = () => {
                   href="https://docs.google.com/presentation/d/1r-VpV2iXhS4BdkBDV0jf3O1GkKByaJB0/edit?usp=sharing&ouid=112031141031112140273&rtpof=true&sd=true"
                 >
                   <MenuItem
-                    fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                    fontSize={{ base: '16px', md: '18px', lg: '20px' }}
                     fontWeight="bold"
                     color="black"
                   >
