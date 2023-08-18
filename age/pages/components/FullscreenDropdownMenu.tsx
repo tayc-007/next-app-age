@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
-import { Box, Button, VStack, Slide, Link, Menu, MenuItem, MenuButton, MenuList } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  VStack,
+  Slide,
+  Link,
+  Menu,
+  MenuItem,
+  MenuButton,
+  MenuList,
+} from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 
@@ -12,7 +22,13 @@ const FullscreenDropdownMenu = () => {
 
   return (
     <>
-      <Button onClick={toggleMenu} colorScheme="#3BB900" bg="#3BB900">
+      <Button
+        onClick={toggleMenu}
+        colorScheme="#3BB900"
+        bg="#3BB900"
+        fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
+        padding={{ base: '2', md: '3', lg: '4' }}
+      >
         Menu
       </Button>
       <Slide direction={isOpen ? 'left' : 'right'} in={isOpen} style={{ zIndex: 9999 }}>
@@ -36,21 +52,31 @@ const FullscreenDropdownMenu = () => {
           >
             <CloseIcon />
           </Button>
-          <VStack spacing={8}>
+          <VStack spacing={{ base: '4', md: '6', lg: '8' }}>
             <NextLink href="/" passHref>
-              <Link fontSize="4xl" fontWeight="bold" color="white" _hover={{ color: '#3BB900' }}>
+              <Link
+                fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                fontWeight="bold"
+                color="white"
+                _hover={{ color: '#3BB900' }}
+              >
                 Home
               </Link>
             </NextLink>
             <NextLink href="/age wallpaper.jpg" target="_blank">
-              <Link fontSize="4xl" fontWeight="bold" color="white" _hover={{ color: '#3BB900' }}>
+              <Link
+                fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                fontWeight="bold"
+                color="white"
+                _hover={{ color: '#3BB900' }}
+              >
                 Pledge
               </Link>
             </NextLink>
             <Menu>
               <MenuButton
                 as={Link}
-                fontSize="4xl"
+                fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
                 fontWeight="bold"
                 color="white"
                 _hover={{ textDecoration: 'none', color: '#3BB900' }}
@@ -59,12 +85,23 @@ const FullscreenDropdownMenu = () => {
               </MenuButton>
               <MenuList bg="white">
                 <NextLink href="/Vision" passHref>
-                  <MenuItem fontSize="4xl" fontWeight="bold" color="black">
+                  <MenuItem
+                    fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                    fontWeight="bold"
+                    color="black"
+                  >
                     Green Tips
                   </MenuItem>
                 </NextLink>
-                <Link href="https://docs.google.com/document/d/1_au-7XhzC46Vq6YTmm7dFFBlWObG4uQoq5Ej2G-yXpY/edit?usp=sharing">
-                <MenuItem fontSize="4xl" fontWeight="bold" color="black">
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/presentation/d/1r-VpV2iXhS4BdkBDV0jf3O1GkKByaJB0/edit?usp=sharing&ouid=112031141031112140273&rtpof=true&sd=true"
+                >
+                  <MenuItem
+                    fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+                    fontWeight="bold"
+                    color="black"
+                  >
                     Green Energys - Save Our Planet
                   </MenuItem>
                 </Link>
